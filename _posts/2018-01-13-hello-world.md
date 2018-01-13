@@ -11,5 +11,3 @@ for ( uint32_t j=0; j<10; ++j ) {
 }
 ```
 
-Our contacts:
-![Contact Image]({{"/images/Vitorian/ContactUs.png"}})
