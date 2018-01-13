@@ -5,7 +5,7 @@ author_email: henry@vitorian.com
 category_dir: /
 baseurl: 
 #url: http://yourdomain.com/
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty
 paginate: 15
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
