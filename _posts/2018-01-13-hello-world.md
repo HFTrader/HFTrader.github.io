@@ -9,8 +9,8 @@ Our contacts:
 Our website:
 
 
-{% highlight c++ %}
+```c++
 for ( uint32_t j=0; j<10; ++j ) {
 	doit( j );
 }
-{% endhighlight %}
+```
