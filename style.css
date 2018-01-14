@@ -20,6 +20,10 @@ h1,h2,h3,h4 {
     min-width: 840px;
 }
 
+img {
+	max-width:100%;
+}
+
 hr {
     margin-left: 0;
     padding-left: 0;
