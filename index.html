@@ -4,6 +4,7 @@ title: Home
 ---
 
 <!-- Show last 5 posts here -->
+<table>
 {% for post in paginator.posts %}
 	<article>
 
@@ -20,7 +21,7 @@ title: Home
 
 	</article>
 {% endfor %}
-
+</table>
 
 <div id="paginator">
     {% if paginator.next_page %}
