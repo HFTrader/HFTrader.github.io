@@ -36,7 +36,7 @@
             <h3>Categories:</h3>
 
 			{% for category in site.categories %}
-				<li><a name="{{ category | first }}">{{ category | first }}</a>
+				<a name="{{ category | first }}">{{ category | first }}</a>
 					<ul>
 					{% for posts in category %}
 						{% for post in posts %}
@@ -44,12 +44,8 @@
 						{% endfor %}
 					{% endfor %}
 					</ul>
-				</li>
 			{% endfor %}
 
-            <ul>
-                <li><i class="icon-link"></i>   <a href="#">Link 1</a></li>
-            </ul>
         </nav>
 
         <main>
