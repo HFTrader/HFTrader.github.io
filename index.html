@@ -8,13 +8,15 @@ title: Home
 	<article>
 
         <header>
-            <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
-            <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
-            <span class="category"><i class="icon-tag"></i> {{ post.categories | category_links }}</span><br/>
-            <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
+            <tr>
+                <td><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td>  
+                <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></td>
+                <td><i class="icon-comment"></i>{{ post.excerpt }}</td>
+                <td><span class="category"><i class="icon-tag"></i> {{post.categories | category_links}}</span></td>
+            </tr>
         </header>
 	
-		<div class="entry">{{ post.excerpt }}</div>
+	<div class="entry">{{ post.excerpt }}</div>
 
 	</article>
 {% endfor %}
