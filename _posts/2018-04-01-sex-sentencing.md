@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Analysis of Gender Disparities in Sentencing
+title: Sex effects favoring women in sentencing more frequent than race effects favoring whites
 category: Feminism
-excerpt: Sex effects and sentencing - an analysis of the statistical literature 
+excerpt:  Sex effects favoring women in sentencing more frequent than race effects favoring whites
 ---
 <img src="/images/Feminism/SexSentencing.PNG" />
