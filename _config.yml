@@ -8,7 +8,7 @@ category_dir: /categories
 #baseurl: http://hftrader.github.io
 #url:
 permalink: pretty
-paginate: 15
+paginate: 150
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 theme: jekyll-theme-minimal
 gems: [jekyll-paginate]
