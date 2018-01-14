@@ -3,7 +3,7 @@ description: Random technical blog bits - C++, FPGA, Finance
 encoding: UTF-8
 author: Henrique Bucher, PhD
 author_email: henry@vitorian.com
-category_dir: /
+category_dir: /categories
 
 #baseurl: http://hftrader.github.io
 #url:
