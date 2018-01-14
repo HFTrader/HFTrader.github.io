@@ -13,9 +13,7 @@ title: Home
                 <td><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td>  
                 <td><span class="category"><i class="icon-tag"></i> {{post.categories | category_links}}</span></td>
                 <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></td>
-            </tr>
-	    <tr> 
-		<td></td> <td colspan="2">{{ post.excerpt }}</td> 
+		<td><i class="icon-comment"></i>{{ post.excerpt }}</td> 
 	    </tr>
         </header>
 	
