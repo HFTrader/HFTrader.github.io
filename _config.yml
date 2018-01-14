@@ -12,3 +12,9 @@ paginate: 15
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 theme: jekyll-theme-minimal
 gems: [jekyll-paginate]
+plugins_dir:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+  - jekyll-mentions
