@@ -11,3 +11,4 @@ permalink: pretty
 paginate: 15
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 theme: jekyll-theme-minimal
+gems: [jekyll-paginate]
