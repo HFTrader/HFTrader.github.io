@@ -10,7 +10,7 @@ category_dir: /categories
 permalink: pretty
 paginate: 150
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
 gems: [jekyll-paginate]
 plugins_dir:
   - jekyll-seo-tag
