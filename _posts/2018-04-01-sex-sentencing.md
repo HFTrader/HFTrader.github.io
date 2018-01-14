@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sex effects favoring women in sentencing more frequent than race effects favoring whites
+title: Judges favor women more than whites
 category: Feminism
 excerpt:  Sex effects favoring women in sentencing more frequent than race effects favoring whites
 ---
