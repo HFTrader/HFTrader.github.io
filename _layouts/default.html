@@ -15,6 +15,7 @@
         <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
     </head>
 
+	
     <body>
         <header>
             <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
@@ -36,12 +37,12 @@
             <h3>Categories:</h3>
 
 			{% for category in site.categories %}
-				<h4><a name="{{ category | first }}">{{ category | first }}</a></h4>
+				<h4><i class="icon-tag"></i><a name="{{ category | first }}">{{ category | first }}</a></h4>
 					<ul>
 					{% for posts in category reversed limit:5 %}
 						{% for post in posts %}
 						{% if post.url %}
-							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+							<li><i class="icon-th"></i><a href="{{ post.url }}">{{ post.title }}</a></li>
 						{% endif %}
 						{% endfor %}
 					{% endfor %}
