@@ -1,5 +1,6 @@
 name: Virtute et Industria
 description: Random technical blog bits - C++, FPGA, Finance
+encoding: UTF-8
 author: Henrique Bucher, PhD
 author_email: henry@vitorian.com
 category_dir: /
@@ -10,13 +11,10 @@ permalink: pretty
 paginate: 15
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 theme: jekyll-theme-minimal
-plugins: [jekyll-paginate]
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  extensions: fenced_code_blocks
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
+   - jekyll-paginate
