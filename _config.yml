@@ -2,19 +2,19 @@ name: Virtute et Industria
 description: Random technical blog bits - C++, FPGA, Finance
 author: Henrique Bucher, PhD
 author_email: henry@vitorian.com
-#category_dir: /categories
+category_dir: /
 baseurl: http://hftrader.github.io
 url:
 permalink: pretty
 paginate: 15
-#exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 theme: jekyll-theme-minimal
 
 # Conversion
-#markdown: kramdown
-#highlighter: rouge
-#kramdown:
-#  input: GFM
-#  hard_wrap: false
-#  syntax_highlighter: rouge
-#  extensions: fenced_code_blocks
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  extensions: fenced_code_blocks
