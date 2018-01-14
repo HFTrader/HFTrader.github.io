@@ -8,6 +8,7 @@ layout: default
             <span><i class="icon-clock"></i><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span><br/>
             <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
             <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
+            <span class="excerpt"><i class="icon-comment"></i> {{ page.excerpt }} </span>
         </header>
 
         <div class="entry">{{ content }}</div>
