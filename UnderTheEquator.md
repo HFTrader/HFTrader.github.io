@@ -1,4 +1,4 @@
 ---
 layout: category_index
-category: Brazil
+category: UnderTheEquator
 ---
