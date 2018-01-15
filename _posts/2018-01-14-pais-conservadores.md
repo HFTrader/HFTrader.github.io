@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Como lidar com pais conservadores
-category: Brazil
+category: UnderTheEquator
 excerpt: Como lidar com pais conservadores
 ---
 <img src="/images/Feminism/PaisConservadores.png" />
