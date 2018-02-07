@@ -25,8 +25,6 @@ script_path = os.path.dirname( os.path.realpath( __file__ ) )
 path = os.path.realpath( os.path.join( script_path, '..' ) )
 print path, todaystr
 
-ymlpath = os.path.join( path, "AllPosts.yml" )
-
 def process_entry( reg ):
         dt = reg.get( 'date', todaystr )
         ex = reg.get( 'excerpt', dt )
@@ -41,14 +39,16 @@ def process_entry( reg ):
             print "Wrote...", fname
 
 def generate_files():
+    ymlpath = os.path.join( path, "AllPosts.yml" )
     with open( ymlpath, 'r' ) as f:
         data = f.read()
         yml = yaml.load( data )
         for reg in yml:
             process_entry( reg )
 
-os.chdir( os.path.join( path, "_posts" ) )
+os.chdir( path )
 runcmd( 'git pull' )
+os.chdir( os.path.join( path, "_posts" ) )
 generate_files()
 runcmd( 'git add .' )
 runcmd( 'git commit -a -m "Scheduled update" ' )
