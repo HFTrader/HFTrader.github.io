@@ -27,11 +27,7 @@ print path, todaystr
 
 ymlpath = os.path.join( path, "AllPosts.yml" )
 
-with open( ymlpath, 'r' ) as f:
-    data = f.read()
-    yml = yaml.load( data )
-
-    for reg in yml:
+def process_entry( reg ):
         dt = reg.get( 'date', todaystr )
         ex = reg.get( 'excerpt', dt )
         ex = '-'.join( ex.split() )[:25]
@@ -44,7 +40,14 @@ with open( ymlpath, 'r' ) as f:
             #print fname, post
             print "Wrote...", fname
 
-os.chdir( path )
-runcmd( 'git add ./_posts' )
-runcmd( 'git commit ./_posts' )
+
+with open( ymlpath, 'r' ) as f:
+    data = f.read()
+    yml = yaml.load( data )
+    for reg in yml:
+        process_entry( reg )
+
+os.chdir( os.path.join( path, "_posts" ) )
+runcmd( 'git add .' )
+runcmd( 'git commit -a -m "Scheduled update" ' )
 runcmd( 'git push' )
