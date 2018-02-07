@@ -40,15 +40,16 @@ def process_entry( reg ):
             #print fname, post
             print "Wrote...", fname
 
-
-with open( ymlpath, 'r' ) as f:
-    data = f.read()
-    yml = yaml.load( data )
-    for reg in yml:
-        process_entry( reg )
+def generate_files():
+    with open( ymlpath, 'r' ) as f:
+        data = f.read()
+        yml = yaml.load( data )
+        for reg in yml:
+            process_entry( reg )
 
 os.chdir( os.path.join( path, "_posts" ) )
 runcmd( 'git pull' )
+generate_files()
 runcmd( 'git add .' )
 runcmd( 'git commit -a -m "Scheduled update" ' )
 runcmd( 'git push' )
