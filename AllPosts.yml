@@ -14,12 +14,32 @@
   category: UnderTheEquator
   excerpt: Average Delivery Times to Brazil according to Ally Express (Chinese distributor)
   image: Brazil/AverageDeliveryTimeAllieExpress.jpg
-  date: 2018-01-13
+  date: 2018-01-14
     
 - title: Boys-Only School in New York City
   category: Feminism
   excerpt: Principal explains why the need for a boys-only school in New York City
   image: Feminism/Boys.jpg
-  date: 2018-01-13
+  date: 2018-01-14
+
+- title: Burglaries in US and UK
+  category: NakedGun
+  excerpt: In the US only 13% home burglaries happen when occupants are home
+  image: GunControl/burglaries.png
+  date: 2018-01-14
+  
+- title: Calvin victimizes himself
+  category: Comics
+  excerpt: Calvin victimizes himself
+  image: Comics/CALVIN.png
+  date: 2018-01-14
+  
+- title: Chicken or Egg?
+  category: DataIsBeautiful
+  excerpt: Who was born first? The chicken or the egg?
+  image: Comics/ChickenEgg.jpg
+  date: 2018-01-14
+  
+
 
 
