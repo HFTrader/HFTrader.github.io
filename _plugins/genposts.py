@@ -48,6 +48,7 @@ with open( ymlpath, 'r' ) as f:
         process_entry( reg )
 
 os.chdir( os.path.join( path, "_posts" ) )
+runcmd( 'git pull' )
 runcmd( 'git add .' )
 runcmd( 'git commit -a -m "Scheduled update" ' )
 runcmd( 'git push' )
